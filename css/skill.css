@@ -1,0 +1,52 @@
+.skills-container {
+    width: 500px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-left: 0.5rem;
+}
+
+.skill-name {
+    width: 120px;
+    font-weight: bold;
+}
+
+.skill-bar {
+    flex: 1;
+    display: flex;
+    background: #333;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 25px;
+}
+
+/*6: 100, 5.5: 92, 5: 83, 4.5: 75, 4: 67, 3.5: 58, 3: 50, 2.5: 42, 2: 33, 1.5: 25, 1: 17, 0.5: 8*/
+.skill-fill {
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: bold;
+    transition: width 0.5s ease-in-out;
+    background-color: crimson;
+}
+
+.skill-subcaption {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: #111;
+}
+
+/* Skill colors, optional and not implemented */
+/* <div class="skill-fill <tag here>" .... */
+.html { background: #e44d26; }
+.css { background: #264de4; }
+.js { background: #f7df1e; color: #000; }
+.python { background: #306998; }

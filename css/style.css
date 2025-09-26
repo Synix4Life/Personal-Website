@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nimbus Mono', sans-serif;    
+}
+
+p {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    color: #111
+}
+
+a {
+    color: #555;
+    text-decoration-line: none;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid crimson;
+}
+
+#main-header {
+    font-size:xx-large;
+    color: white;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    border: 2px solid, black;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 3px solid crimson;
+}
+
+#main-footer {
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: crimson;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.box {
+    background-color: rgba(255, 0, 0, 0.05); /* soft red tint */
+    color: black;
+    margin: 1rem 0; /* vertical spacing */
+    padding: 1rem;
+    border: 1px solid crimson;
+    border-radius: 6px;
+}
+
+.box_heading {
+    font-weight: bold; 
+    font-size: medium;
+    color: crimson;
+}
+
+.box_info {
+    color: #333;
+    text-indent: 1rem;
+}
+
+.box_image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+.box_link {
+    text-decoration: none;
+    color: inherit; /* Keeps the text color same as normal */
+    display: block; /* Ensures the link covers the whole div */
+}
+
+/* Optional: add hover effect for the whole div */
+.box_link:hover .box {
+    background-color: #f0f0f0; /* Example hover effect */
+    cursor: pointer;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* light, clean white */
+    border: 2px solid crimson;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 2rem; /* spacing between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card ul {
+    margin-left: 1.5rem;   /* controls indentation */
+    padding-left: 1rem;    /* keep bullets inside box */
+    padding-top: 0.5rem;
+    list-style-type: circle;
+}
+
+.card li {
+    margin-bottom: 0.3rem; /* optional spacing between bullets */
+}
+
+
+.caption {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    color: crimson;
+}
+
+.subcaption {
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    color: #111;
+    /*border-left: 3px solid crimson;*/
+    padding-left: 0.5rem;
+}
+
+.box ul {
+    margin-left: 1.5rem;   /* controls indentation */
+    padding-left: 1rem;    /* keep bullets inside box */
+    padding-top: 0.5rem;
+    list-style-type: circle;
+}
+
+.box li {
+    margin-bottom: 0.3rem; /* optional spacing between bullets */
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;       /* allow wrapping to next line */
+  gap: 1rem;             /* spacing between cards */
+  justify-content: center; /* center the row */
+}
+
+.gallery_card {
+  display: inline-flex;          /* makes card size wrap content */
+  flex-direction: column;        /* stack image + caption vertically */
+  align-items: center;
+}
+
+.gallery_card img {
+  border: 2px solid crimson;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 300px;              /* optional: keep images from getting too big */
+  height: auto;
+  display: block;
+}
+
+.gallery_caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
