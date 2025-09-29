@@ -32,8 +32,8 @@ header {
 main {
     padding: 2rem;
     border: 2px solid, black;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: clamp(1rem, 5vw, 100px);
+    padding-right: clamp(1rem, 5vw, 100px);
 }
 
 footer {
@@ -66,11 +66,6 @@ nav a {
 
 nav a:hover {
     color: crimson;
-}
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 .box {
