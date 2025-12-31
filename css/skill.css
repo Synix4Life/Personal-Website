@@ -53,3 +53,42 @@
 .css { background: #264de4; }
 .js { background: #f7df1e; color: #000; }
 .python { background: #306998; }
+
+.english {
+    background: linear-gradient(
+        90deg,
+        #012169,
+        #ffffff,
+        #c8102e
+    );
+    color: #000; /* better contrast on white */
+}
+
+.norwegian {
+    background: linear-gradient(
+        90deg,
+        #ba0c2f,
+        #ffffff,
+        #00205b
+    );
+    color: #000;
+}
+
+.french {
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #0055a4
+    );
+    color: #000;
+}
+
+
+.german {
+    background: linear-gradient(
+        90deg,
+        #000000,
+        #b11226,
+        #f2a900
+    );
+}
