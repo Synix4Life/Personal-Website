@@ -213,8 +213,8 @@ nav a:hover {
 /* ========== ICONS (Icons for career) ========== */
 
 .icon svg {
-    width: 1em;
-    height: 1em;
+    width: 16px;
+    height: 16px;
     fill: currentColor;
     vertical-align: middle;
 }
