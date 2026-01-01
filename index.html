@@ -1,84 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/skill.css">
-    <title>Synix's Website</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <header>
-        <p id="main-header">Welcome to My Personal Website</p>
-        <nav>
+---
+layout: default
+title: Home
+---
+
+<main>
+    <div class="card">
+        <div class="caption">
+            About me
+        </div>
+        <p>Welcome to my personal website!</p>
+        <p>My name is Nils, and I'm currently studying Computer Science at the Technical University of Darmstadt (TU Darmstadt).</p> 
+        <p>I'm passionate about software development, problem-solving, and constantly learning new technologies.</p>
+        <p>Recently, I also choose to dive deeper into the area of IT- Security and Cryptography, picking specialized courses and expanding my knowledge alongside via tools like TryHackMe.</p>
+        <p>Currently, I'm preparing for my bachelor thesis, which will be the last necessary course to finish my bachelors degree.</p>
+
+        <div class="box  box--unlinked">
+            <p class="box_heading">B.Sc. Computer Science</p>
+
+            <p class="box_info">
+                Technical University of Darmstadt (TU Darmstadt)
+            </p>
+
+            <p class="box_info">
+                <span>
+                    <span class="icon">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>When?</title>
+                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                        </svg>
+                    </span>
+                    10/2022 - Present
+                </span>
+                <span style="display: inline-block; margin-left: 1rem;">
+                    <span class="icon">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>Location</title>
+                            <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+                        </svg>
+                    </span>
+                    Darmstadt, DE
+                </span>
+            </p>
+
+            <p><strong>Specialization areas</strong></p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html"`">Programming</a></li>
-                <li><a href="car.html">My Car</a></li>
+                <li>IT- Security</li>
+                <li>Networks</li>
+                <li>Serious Games</li>
             </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <div class="card">
-            <div class="caption">
-                About me
-            </div>
-            <p>Welcome to my personal website!</p>
-            <p>My name is Nils, and I'm currently studying Computer Science at the Technical University of Darmstadt (TU Darmstadt).</p> 
-            <p>I'm passionate about software development, problem-solving, and constantly learning new technologies.</p>
-            <p>Recently, I also choose to dive deeper into the area of IT- Security and Cryptography, picking specialized courses and expanding my knowledge alongside via tools like TryHackMe.</p>
-            <p>Currently, I'm preparing for my bachelor thesis and the TPSE (Teamprojekt Softwareentwicklugn)</p>
-
-            
-            <div class="box">
-                <p class="box_heading">
-                    B.Sc. Computer Science
-                </p>
-                <p class="box_info">
-                    Technical University of Darmstadt (TU Darmstadt), October 2022 - Present
-                </p>
-                Specialization areas:
-                <ul>
-                    <li>IT- Security</li>
-                    <li>Networks</li>
-                    <li>Serious Games</li>
-                </ul>
-            </div>
         </div>
+        
+    </div>
 
-        <div class="card">
-            <div class="caption">
-                Interests
-            </div>
-                <div class="subcaption">
-                    Programming
-                </div>
-                <p>Im an active programmer.</p>
-                <p>Thereby, I try to code projects that help me in some way, or are just fun.</p>
-                <p>You can see a detailed view of my different projects <a href="projects.html">here</a>.</p>
-
-                <div class="subcaption">
-                    Car Stuff
-                </div>
-                <p>In my free time, I enjoy working on cars with friends.</p>
-                <p>We focus mainly on visual tuning and detailing, painting interior and exterior parts, installing custom components, and giving each car a personal touch.</p>
-                <p>I currently drive a 2011 Kia Ceed ED (Facelift). While it's not the fastest car, it's been reliable since I got it in 2022 and has served me well without any major issues.</p>
-                <p>Currently, plans are to repaint the rims for my summer wheels white and install a custom rear logo, as well as further vinyl.</p>
-
-                <div class="subcaption">
-                    Speedcubing
-                </div>
-                <p>I'm a speedcuber, which means I solve Rubik's Cubes as quickly as possible using optimized algorithms and finger tricks.</p>
-                <p>I focus mainly on 3x3, 4x4 and Skewb, but I can solve a lot of different puzzles (all WCA official cubes + some other shapes).</p>
-                <p>While I've done it actively, meaning I went to official competitions, I have recently focused on other things. Therefore, I'm not attending official competitions anymore and I'm also not planning to go any time soon.</p>
-                <p>You can view my official results and rankings from my active time in the scene on <a href="https://www.worldcubeassociation.org/persons/2019LANG04">my World Cube Association (WCA) profile</a>.</p>
+    <div class="card">
+        <div class="caption">
+            Interests
         </div>
+        <div class="subcaption">
+            Programming
+        </div>
+            <p>Im an active programmer.</p>
+            <p>Thereby, I try to code projects that help me in some way, or are just fun.</p>
+            <p>You can see a detailed view of my different projects <a href="projects.html">here</a>.</p>
 
-        <div class="card">
-            <div class="caption">
-                Language Skills
-            </div>
+        <div class="subcaption">
+            Car Stuff
+        </div>
+            <p>In my free time, I enjoy working on cars with friends.</p>
+            <p>We focus mainly on visual tuning and detailing, painting interior and exterior parts, installing custom components, and giving each car a personal touch.</p>
+            <p>I currently drive a 2011 Kia Ceed ED (Facelift). While it's not the fastest car, it's been reliable since I got it in 2022 and has served me well without any major issues.</p>
+            <p>Currently, plans are to repaint the rims for my summer wheels white and install a custom rear logo, as well as further vinyl.</p>
+
+        <div class="subcaption">
+            Speedcubing
+        </div>
+            <p>I'm a speedcuber, which means I solve Rubik's Cubes as quickly as possible using optimized algorithms and finger tricks.</p>
+            <p>I focus mainly on 3x3, 4x4 and Skewb, but I can solve a lot of different puzzles (all WCA official cubes + some other shapes).</p>
+            <p>While I've done it actively, meaning I went to official competitions, I have recently focused on other things. Therefore, I'm not attending official competitions anymore and I'm also not planning to go any time soon.</p>
+            <p>You can view my official results and rankings from my active time in the scene on <a href="https://www.worldcubeassociation.org/persons/2019LANG04">my World Cube Association (WCA) profile</a>.</p>
+    </div>
+
+    <div class="card">
+        <div class="caption">
+            Language Skills
+        </div>
             <!-- 6: 100 => C2, 
                 5.5: 92 => C1-C2, 
                 5: 83 => C1, 
@@ -91,43 +96,35 @@
                 1.5: 25 => A1-A2, 
                 1: 17 => A1, 
                 0.5: 8  => Started -->
-            <div class="skills-container">
-                <div class="skill">
-                    <div class="skill-name"><span>🇩🇪</span> German</div>
-                    <div class="skill-bar">
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-name"><span>🇩🇪</span> German</div>
+                <div class="skill-bar">
                     <div class="skill-fill german" style="width: 100%;"></div> <!-- 6/6 -->
-                    </div>
                 </div>
+            </div>
 
-                <div class="skill">
-                    <div class="skill-name"><span>🇺🇸</span> English</div>
-                    <div class="skill-bar">
+            <div class="skill">
+                <div class="skill-name"><span>🇺🇸</span> English</div>
+                <div class="skill-bar">
                     <div class="skill-fill english" style="width: 83%;"></div> <!-- 5/6 => C1 -->
-                    </div>
                 </div>
-                      
-                <div class="skill">
-                    <div class="skill-name"><span>🇫🇷</span> French</div>
-                    <div class="skill-bar">
-                    <div class="skill-fill french" style="width: 25%;"></div> <!-- 1.5/6 => A1-A2 -->
-                    </div>
+            </div>
+                  
+            <div class="skill">
+                <div class="skill-name"><span>🇳🇴</span> Norwegian</div>
+                <div class="skill-bar">
+                    <div class="skill-fill norwegian" style="width: 25%;"></div> <!-- 1.5/6 => A1-A2 -->
                 </div>
+            </div>
 
-                <div class="skill">
-                    <div class="skill-name"><span>🇳🇴</span> Norwegian</div>
-                    <div class="skill-bar">
-                    <div class="skill-fill norwegian" style="width: 17%;"></div> <!-- 1/6 => A1 -->
-                    </div>
+            <div class="skill">
+                <div class="skill-name"><span>🇫🇷</span> French</div>
+                <div class="skill-bar">
+                    <div class="skill-fill french" style="width: 17%;"></div> <!-- 1/6 => A1 -->
                 </div>
             </div>
         </div>
+    </div>
 
-    </main>
-    
-    <footer class="container">
-        <div class="container">
-            <p id="main-footer">Purely coded, no automated generation | &copy; 2025 Synix. All rights reserved</p>
-        </div>
-    </footer>
-</body>
-</html>
+</main>

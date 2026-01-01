@@ -1,3 +1,5 @@
+/* ========== GENERAL ========== */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,20 +14,23 @@ p {
 }
 
 a {
-    color: #555;
+    color: #002781;;
     text-decoration-line: none;
 }
 
+a:not(.box_link:hover):hover {
+    font-weight: bold;
+}
+
 header {
-    background-color: #111;
-    color: white;
+    background-color: #dbdbdb;
+    color: #111;
     padding: 1rem 2rem;
-    border-bottom: 3px solid crimson;
+    border-bottom: 3px solid #002781;
 }
 
 #main-header {
     font-size:xx-large;
-    color: white;
     text-align: center;
 }
 
@@ -37,16 +42,15 @@ main {
 }
 
 footer {
-    background-color: #111;
-    color: white;
+    background-color: #dbdbdb;
+    color: #111;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    border-top: 3px solid crimson;
+    border-top: 3px solid #002781;
 }
 
 #main-footer {
-    color: white;
     text-align: center;
 }
 
@@ -59,7 +63,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: #111;
     text-decoration: none;
     font-weight: bold;
 }
@@ -68,19 +72,30 @@ nav a:hover {
     color: crimson;
 }
 
+
+/* ========== BOX (In- card box) ========== */
+
 .box {
     background-color: rgba(255, 0, 0, 0.05); /* soft red tint */
     color: black;
     margin: 1rem 0; /* vertical spacing */
     padding: 1rem;
-    border: 1px solid crimson;
+    border: 1px solid;
     border-radius: 6px;
+}
+
+.box--unlinked{
+    border: 1px solid #002781;
+}
+
+.box--linked{
+    border: 1px solid crimson;
 }
 
 .box_heading {
     font-weight: bold; 
     font-size: medium;
-    color: crimson;
+    color: #002781;
 }
 
 .box_info {
@@ -105,9 +120,23 @@ nav a:hover {
 
 /* Optional: add hover effect for the whole div */
 .box_link:hover .box {
-    background-color: #f0f0f0; /* Example hover effect */
+    background-color: #dbdbdb; /* Example hover effect */
     cursor: pointer;
 }
+
+.box ul {
+    margin-left: 1.5rem;   /* controls indentation */
+    padding-left: 1rem;    /* keep bullets inside box */
+    padding-top: 0.5rem;
+    list-style-type: circle;
+}
+
+.box li {
+    margin-bottom: 0.3rem; /* optional spacing between bullets */
+}
+
+
+/* ========== CARD (Outermost cells) ========== */
 
 .card {
     background-color: rgba(255, 255, 255, 0.9); /* light, clean white */
@@ -135,7 +164,7 @@ nav a:hover {
     font-size: 1.2rem;
     padding-bottom: 1rem;
     padding-top: 2rem;
-    color: crimson;
+    color: #002781;
 }
 
 .subcaption {
@@ -148,28 +177,19 @@ nav a:hover {
     padding-left: 0.5rem;
 }
 
-.box ul {
-    margin-left: 1.5rem;   /* controls indentation */
-    padding-left: 1rem;    /* keep bullets inside box */
-    padding-top: 0.5rem;
-    list-style-type: circle;
-}
 
-.box li {
-    margin-bottom: 0.3rem; /* optional spacing between bullets */
-}
-
+/* ========== GALLERY (Pictures) ========== */
 
 .gallery {
   display: flex;
-  flex-wrap: wrap;       /* allow wrapping to next line */
-  gap: 1rem;             /* spacing between cards */
+  flex-wrap: wrap; /* allow wrapping to next line */
+  gap: 1rem; /* spacing between cards */
   justify-content: center; /* center the row */
 }
 
 .gallery_card {
-  display: inline-flex;          /* makes card size wrap content */
-  flex-direction: column;        /* stack image + caption vertically */
+  display: inline-flex; /* makes card size wrap content */
+  flex-direction: column; /* stack image + caption vertically */
   align-items: center;
 }
 
@@ -177,7 +197,7 @@ nav a:hover {
   border: 2px solid crimson;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  max-width: 300px;              /* optional: keep images from getting too big */
+  max-width: 300px; /* keep images from getting too big */
   height: auto;
   display: block;
 }
@@ -185,6 +205,16 @@ nav a:hover {
 .gallery_caption {
   margin-top: 0.5rem;
   font-size: 0.9rem;
-  color: #555;
+  color: #002781;
   text-align: center;
+}
+
+
+/* ========== ICONS (Icons for career) ========== */
+
+.icon svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    vertical-align: middle;
 }
