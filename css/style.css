@@ -1,3 +1,33 @@
+/* ========== COLOR DEFINITION (TokyoNight Storm) ========== */
+:root {
+    /* ----- Backgrounds ----- */
+    --bg: #1A1B26; /* Default background */
+    --hf-bg: #24283B; /* Header/ Footer Background */
+    --box: #1F2335; /* Box background */
+    --card: rgba(36, 40, 59, 0.9); /* Card background */
+    
+    /* ----- Text ----- */
+    --text: #C0CAF5; /* Standard text */
+    --text-muted: #A0A8D0; /* Usage: box_info */
+    --caption: #7AA2F7; /* Main caption */
+    --sub-caption: #A9B1D6; /* Secondary captions */
+    --box-caption: #7AA2F7; /* Caption inside boxes, may be equal to --caption */
+
+    /* ----- Linking etc. ----- */
+    --link: #4FD6E0; /* Link color */
+    --link-hover: #7AE3F7; /* Hovering above normal links */
+    --nav-hover: #4FD6E0; /* Hovering above nav links */
+    --link-hover-box: rgba(79, 214, 224, 0.15);/*rgba(51, 70, 124, 0.2);*/ /* Hovering above box links */
+
+    /* ----- Highlighting ----- */
+    --accent-primary: #9D7FEA;  /* Primary accent */
+    --accent-secondary: #D45BB0;/* Secondary accent */
+
+    /* ----- Other ----- */
+    --box-shadow: rgba(0, 0, 0, 0.5); /* Shadow for boxes/cards, may be not visible */
+}
+
+
 /* ========== GENERAL ========== */
 
 * {
@@ -10,23 +40,33 @@
 p {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
-    color: #111
+    color: var(--text);
 }
 
 a {
-    color: #002781;;
+    color: var(--link);
     text-decoration-line: none;
 }
 
-a:not(.box_link:hover):hover {
+a:not(.box_link:hover):not(nav a:hover):hover {
+    color: var(--link-hover);
     font-weight: bold;
 }
 
+html, body {
+    height: 100%;
+    background-color: var(--bg); /* page background */
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+
 header {
-    background-color: #dbdbdb;
-    color: #111;
+    background-color: var(--hf-bg);
+    color: var(--text);
     padding: 1rem 2rem;
-    border-bottom: 3px solid #002781;
+    border-bottom: 3px solid var(--accent-secondary);
 }
 
 #main-header {
@@ -36,22 +76,18 @@ header {
 
 main {
     padding: 2rem;
-    border: 2px solid, black;
+    background-color: var(--bg);
     padding-left: clamp(1rem, 5vw, 100px);
     padding-right: clamp(1rem, 5vw, 100px);
 }
 
 footer {
-    background-color: #dbdbdb;
-    color: #111;
+    background-color: var(--hf-bg);
+    color: var(--text);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    border-top: 3px solid #002781;
-}
-
-#main-footer {
-    text-align: center;
+    border-top: 3px solid var(--accent-secondary);
 }
 
 nav ul {
@@ -63,21 +99,21 @@ nav ul {
 }
 
 nav a {
-    color: #111;
+    color: var(--text);
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: crimson;
+    color: var(--nav-hover);
 }
 
 
 /* ========== BOX (In- card box) ========== */
 
 .box {
-    background-color: rgba(255, 0, 0, 0.05); /* soft red tint */
-    color: black;
+    background-color: var(--box); /* soft red tint */
+    color: var(--text);
     margin: 1rem 0; /* vertical spacing */
     padding: 1rem;
     border: 1px solid;
@@ -85,21 +121,21 @@ nav a:hover {
 }
 
 .box--unlinked{
-    border: 1px solid #002781;
+    border: 1px solid var(--accent-primary);
 }
 
 .box--linked{
-    border: 1px solid crimson;
+    border: 1px solid var(--link);
 }
 
 .box_heading {
     font-weight: bold; 
     font-size: medium;
-    color: #002781;
+    color: var(--box-caption);
 }
 
 .box_info {
-    color: #333;
+    color: var(--text-muted);
     text-indent: 1rem;
 }
 
@@ -120,7 +156,7 @@ nav a:hover {
 
 /* Optional: add hover effect for the whole div */
 .box_link:hover .box {
-    background-color: #dbdbdb; /* Example hover effect */
+    background-color: var(--link-hover-box); /* Example hover effect */
     cursor: pointer;
 }
 
@@ -139,12 +175,12 @@ nav a:hover {
 /* ========== CARD (Outermost cells) ========== */
 
 .card {
-    background-color: rgba(255, 255, 255, 0.9); /* light, clean white */
-    border: 2px solid crimson;
+    background-color: var(--card); /* light, clean white */
+    border: 2px solid var(--accent-primary);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 2rem; /* spacing between cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--box-shadow);
 }
 
 .card ul {
@@ -164,7 +200,7 @@ nav a:hover {
     font-size: 1.2rem;
     padding-bottom: 1rem;
     padding-top: 2rem;
-    color: #002781;
+    color: var(--caption);
 }
 
 .subcaption {
@@ -172,8 +208,7 @@ nav a:hover {
     font-size: 1rem;
     padding-bottom: 0.5rem;
     padding-top: 1rem;
-    color: #111;
-    /*border-left: 3px solid crimson;*/
+    color: var(--sub-caption);
     padding-left: 0.5rem;
 }
 
@@ -194,9 +229,9 @@ nav a:hover {
 }
 
 .gallery_card img {
-  border: 2px solid crimson;
+  border: 2px solid var(--accent-primary);
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px var(--box-shadow);
   max-width: 300px; /* keep images from getting too big */
   height: auto;
   display: block;
@@ -205,7 +240,7 @@ nav a:hover {
 .gallery_caption {
   margin-top: 0.5rem;
   font-size: 0.9rem;
-  color: #002781;
+  color: var(--accent-secondary);
   text-align: center;
 }
 

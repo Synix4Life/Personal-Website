@@ -10,7 +10,7 @@ title: Home
         </div>
             <p>I'm working on a lot of different projects regarding different topics and programming languages. </p>
             <p>Hereby, I try to mainly build projects that bring some kind of value to me or my skills.</p>
-            <p>As an example, the Go Note App focuses was created to have a sensible project to learn Go, as well as thighten my skills regarding HTML, CSS and JS. </p>
+            <p>As an example, the Go Note App focuses was created to have a sensible project to learn Go, as well as tighten my skills regarding HTML, CSS and JS. </p>
             <p>Further projects are available at <a href="https://github.com/Synix4Life">my GitHub page</a>.</p>
             <p>University projects are listed separately (Mostly proprietary software).</p>
     </div>
@@ -20,7 +20,7 @@ title: Home
             Programming Projects
         </div>
             <p>This is a collection of some of my done projects or which I'm currently working on.</p>
-            <p>I only feature larger projects here, that means mini- projects like my implementation of the <a href="https://github.com/Synix4Life/EuclidianAlgorithm">Euclidian algorithm</a> or a small <a href="https://github.com/Synix4Life/Image-Messanger">Image Messanger</a> aren't listed as published projects, however they still exist.</p>
+            <p>I only feature larger projects here, that means mini- projects like my implementation of the <a href="https://github.com/Synix4Life/EuclidianAlgorithm">Euclidean algorithm</a> or a small <a href="https://github.com/Synix4Life/Image-Messanger">Image Messanger</a> aren't listed as published projects, however they still exist.</p>
         <div class="subcaption">
             Published projects
         </div>
@@ -31,6 +31,17 @@ title: Home
                 <p class="box_info"><span style="font-weight: bold;">Status</span>: Finished</p>
                 <p>A TikTakToe implementation, where you can play against a bot to test your skills.</p>
                 <p>Supports a semi-perfect AI, as well as random moves for optimal configuration.</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/Synix4Life/Personal-Website" class="box_link">
+            <div class="box box--linked">
+                <p class="box_heading">Personal Website</p>
+                <p class="box_info">HTML, CSS, <em>JavaScript</em></p>
+                <p class="box_info"><span style="font-weight: bold;">Status</span>: Continuous updates</p>
+                <p>The website you're currently on.</p>
+                <p>It is a static website written in HTML and CSS and published via Github Pages (Jekyll)</p>
+                <p>You can compare this to a CV, but is more detailed than a CV, and features further information about myself and my hobbies.</p>
             </div>
         </a>
             
@@ -73,6 +84,13 @@ title: Home
             <p class="box_info"><span style="font-weight: bold;">Status</span>: In development</p>
             <p>A Flask-based web application designed to display real-time cryptocurrency prices.</p>
             <p>It also features investment tracking, helping users monitor their portfolio performance and calculate profits over time.</p>            
+        </div>
+        <div class="box box--unlinked">
+            <p class="box_heading"><em>Game (title not yet chosen)</em></p>
+            <p class="box_info">Godot, GDScript</p>
+            <p class="box_info"><span style="font-weight: bold;">Status</span>: In development</p>
+            <p>A small little game made in Godot Engine with the help of GDScript.</p>
+            <p>Since the project is in an early stage, no further information can be given...</p>            
         </div>
 
     </div>
@@ -146,10 +164,16 @@ title: Home
         <div class="caption">
             Tech Stack
         </div>
-        <div class="skill-subcaption">
+
+        <p>Here, you can read about my skills!</p>
+        <p>These are on a skill-bar. The more filled the skill-bar is, the more experience and knowledge I have about it</p>
+
+        <p>To see the individual skills, <strong>toggle the category</strong>.</p>
+
+        <div class="skill-subcaption toggle">
             Programming
         </div>
-        <div class="skills-container">
+        <div class="skills-container hidden">
             <div class="skill">
                 <div class="skill-name">Python</div>
                 <div class="skill-bar">
@@ -193,10 +217,10 @@ title: Home
             </div>
         </div>
 
-        <div class="skill-subcaption">
+        <div class="skill-subcaption toggle">
             Database & Storage
         </div>
-        <div class="skills-container">
+        <div class="skills-container hidden">
             <div class="skill">
                 <div class="skill-name">PostgreSQL</div>
                 <div class="skill-bar">
@@ -212,10 +236,10 @@ title: Home
             </div>
         </div>
             
-        <div class="skill-subcaption">
+        <div class="skill-subcaption toggle">
             Scripting
         </div>
-        <div class="skills-container">
+        <div class="skills-container hidden">
             <div class="skill">
                 <div class="skill-name">Markdown</div>
                 <div class="skill-bar">
@@ -237,15 +261,33 @@ title: Home
             <div class="skill">
                 <div class="skill-name">CSS</div>
                 <div class="skill-bar">
-                    <div class="skill-fill css" style="width: 42%;"></div> <!-- 2.5/6 -->
+                    <div class="skill-fill css" style="width: 50%;"></div> <!-- 3/6 -->
                 </div>
             </div>
         </div>
             
-        <div class="skill-subcaption">
+        <div class="skill-subcaption toggle">
+            Game Development
+        </div>
+        <div class="skills-container hidden">
+            <div class="skill">
+                <div class="skill-name">Godot</div>
+                <div class="skill-bar">
+                    <div class="skill-fill godot" style="width: 25%;"></div> <!-- 1.5/6 -->
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">GDScript</div>
+                <div class="skill-bar">
+                    <div class="skill-fill gdscript" style="width: 17%;"></div> <!-- 1/6 -->
+                </div>
+            </div>
+        </div>
+            
+        <div class="skill-subcaption toggle">
             Technologies
         </div>
-        <div class="skills-container">
+        <div class="skills-container hidden">
             <div class="skill">
                 <div class="skill-name">Linux</div>
                 <div class="skill-bar">
@@ -266,12 +308,12 @@ title: Home
             </div>
         </div>
 
-        <div class="skill-subcaption">
+        <div class="skill-subcaption toggle">
             Other
         </div>
-        <div class="skills-container">
+        <div class="skills-container hidden">
             <div class="skill">
-                <div class="skill-name">Powerpoint</div>
+                <div class="skill-name">PowerPoint</div>
                 <div class="skill-bar">
                     <div class="skill-fill powerpoint" style="width: 67%;"></div> <!-- 4/6 -->
                 </div>

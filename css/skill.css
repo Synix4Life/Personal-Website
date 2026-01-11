@@ -1,3 +1,17 @@
+/* ========== COLOR DEFINITION ========== */
+:root {
+    /* ----- Skill ----- */
+    --skill-fill-base: #9ECE6A; /* Skill fill background if none custom are used (Fallback) */
+        /* Shall not be equal + differentiable to '--card' from 'style.css' */
+    --skill-bar-border: #565F89; /* Border around the skill-bar -> Be cautious when changing */
+    --skill-bar-bg: rgba(0,0,0,0); /* Background of non- filled parts of skill-fill *
+        /* May be invisible  */
+    --skill-sub-caption: #A9B1D6; /* Sub-caption for skill */
+        /* May be equal to '--sub-caption' from 'style.css' */
+}
+
+/* ========== SKILLS ========== */
+
 .skills-container {
     width: 100%;
     max-width: 500px;
@@ -20,9 +34,9 @@
 .skill-bar {
     flex: 1;
     display: flex;
-    /*background: #dbdbdb; /*#333;*/
+    background: var(--skill-bar-bg);
     border-radius: 25px;
-    border: 1px solid #111111; /*TODO*/
+    border: 1px solid var(--skill-bar-border);
     overflow: hidden;
     height: 25px;
 }
@@ -34,10 +48,9 @@
     text-align: right;
     padding-right: 10px;
     line-height: 25px;
-    color: #fff;
     font-weight: bold;
     transition: width 0.5s ease-in-out;
-    background-color: crimson;
+    background-color: var(--skill-fill-base);
 }
 
 .skill-subcaption {
@@ -45,8 +58,39 @@
     font-size: 1.1rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    color: #111;
+    color: var(--skill-sub-caption);
 }
+
+/* ========== TOGGLE ========== */
+
+/* Hidden container */
+.hidden {
+    display: none;
+}
+
+/* Clickable section header */
+.skill-subcaption {
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Arrow */
+.skill-subcaption::before {
+    content: "▸";
+    display: inline-block;
+    transition: transform 0.25s ease;
+}
+
+/* Arrow rotation when open */
+.skill-subcaption.open::before {
+    transform: rotate(90deg);
+}
+
+/* ========== CUSTOM COLORS ========== */
 
 /* Skill colors, optional and not implemented */
 /* <div class="skill-fill <tag here>" .... */
@@ -69,12 +113,16 @@
 .postgres { background: #336791; color: white; }
 .sqlite { background: #003b57; color: white; }
 
+/* ========== Game Dev ========== */
+.godot {background: #478CBF; color: white; }
+.gdscript { background: #355C7D; color: white; }
+
+
 /* ========== Other ========== */
 .git { background: #f34f29; color: white; }
 .github { background: #48228d; color: white; }
 .linux { background: #181717; color: white; }
 .notion { background: #000000; color: white; }
-.tor { background: #6441a4; color: white; }
 
 /* ========== Microsoft Office ========== */
 .excel { background: #217346; color: white; }
