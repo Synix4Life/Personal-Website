@@ -253,3 +253,53 @@ nav a:hover {
     fill: currentColor;
     vertical-align: middle;
 }
+
+
+/* ========== ICONS (Icons for career) ========== */
+/* ============ INVISIBLE TECH GRID ============= */
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin: auto;
+}
+
+.tech-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,120px);
+  justify-content:center;
+  gap:40px;
+}
+
+.tech-box{
+  width:90px;
+  height:90px;
+  background:#1f2937;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.tech-box i{
+  font-size:55px;   /* bigger icon */
+  color:#6b7280;
+  transition:0.3s;
+}
+
+.tech-name{
+  color:white;
+  font-size:18px;
+  opacity:0;
+  transition:0.3s;
+}
+
+.tech:hover .tech-name{
+  opacity:1;
+}
+
+.tech:hover i{
+  color:#3776ab;
+}
