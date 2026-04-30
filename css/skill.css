@@ -92,8 +92,7 @@
 
 /* ========== CUSTOM COLORS ========== */
 
-/* Skill colors, optional and not implemented */
-/* <div class="skill-fill <tag here>" .... */
+/* Skill colors, optional */
 
 /* ========== Programming Languages ========== */
 .c { background: #555555; color: white; }
@@ -113,11 +112,6 @@
 .postgres { background: #336791; color: white; }
 .sqlite { background: #003b57; color: white; }
 
-/* ========== Game Dev ========== */
-.godot {background: #478CBF; color: white; }
-.gdscript { background: #355C7D; color: white; }
-
-
 /* ========== Other ========== */
 .git { background: #f34f29; color: white; }
 .github { background: #48228d; color: white; }
@@ -127,46 +121,3 @@
 /* ========== Microsoft Office ========== */
 .excel { background: #217346; color: white; }
 .powerpoint { background: #d24726; color: white; }
-.onenote { background: #7719aa; color: white; }
-
-
-
-
-/* ========== Languages ========== */
-.english {
-    background: linear-gradient(
-        90deg,
-        #012169,
-        #ffffff,
-        #c8102e
-    );
-    color: #000;
-}
-
-.norwegian {
-    background: linear-gradient(
-        90deg,
-        #ffffff,
-        #ba0c2f
-    );
-    color: #000;
-}
-
-.french {
-    background: linear-gradient(
-        90deg,
-        #0055a4,
-        #ffffff,
-        #c8102e
-    );
-    color: #000;
-}
-
-.german {
-    background: linear-gradient(
-        90deg,
-        #000000,
-        #b11226,
-        #f2a900 
-    );
-}
